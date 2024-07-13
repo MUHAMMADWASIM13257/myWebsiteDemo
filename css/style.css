@@ -1,0 +1,286 @@
+/* Body  style here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+
+/* Header style here*/
+header {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 1.2em;
+    font-size: 2em;
+    color: darkslategray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 1em;
+
+}
+
+/* Navigation style here */
+nav {
+    display: block;
+    background-color: darkgray;
+    color: white;
+    padding: 1.2em;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 1em;
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation right & left link style here */
+.rightCorner {
+    float: right;
+    margin-right: 0;
+}
+
+.leftCorner {
+    float: left;
+    margin-left: 0;
+}
+
+ul::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Navigation a link style here */
+nav ul a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 1em;
+}
+
+nav ul a:hover {
+    background-color: lightgray;
+    color: black;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+/* Footer style here */
+footer {
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    clear: both;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+}
+
+footer a {
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: pointer;
+    border-radius: 1em;
+    transition: color 0.3s ease-in-out;
+    padding: 0.5em 1em;
+    transition: text-decoration-color 0.5s;
+    border: 2px solid black;
+}
+
+footer a:hover {
+    color: white;
+    transition: color 0.3s ease-in-out;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 1em;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px;
+    text-decoration-skip-ink: auto;
+    transition: text-decoration-color 0.5s;
+    background-color: rgba(25, 25, 237, 0.833);
+}
+
+/* Social media */
+.social-media {
+    margin-top: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+/* main container */
+main {
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+
+main::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* article */
+.container {
+    display: flex;
+    width: 70%;
+    height: 70%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    margin: 10px;
+}
+
+/* section */
+.column {
+    padding: 10px;
+
+    background-color: lightgreen;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.column img {
+    width: 200px;
+}
+
+/* sidebar */
+aside {
+    width: 30%;
+    height: 70%;
+    padding: 10px;
+    background-color: lightblue;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+section {
+    width: 90%;
+    padding: 10px;
+    background-color: lightyellow;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 2px solid red;
+    border-radius: 1em;
+}
+
+/* service */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.services ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5em;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+    border-radius: 1em;
+}
+
+.services ul li:hover {
+    background-color: lightgray;
+    color: black;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+/* Service */
+
+/* Media queries for responsive design */
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        width: 20%;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    nav ul li {
+
+        /* margin-top: 1em; */
+        margin-left: 10px;
+        margin-right: 10px;
+        display: inline;
+    }
+
+    nav ul a {
+        width: 100%;
+        display: inline;
+
+    }
+
+    nav ul a {
+        width: 100%;
+        text-align: center;
+        padding: 3px;
+        margin: 3px;
+        font-size: 10px;
+    }
+
+    nav ul li a:hover {
+        background-color: rgb(33, 83, 234);
+        color: white;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        border-radius: 1em;
+    }
+
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    aside::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    aside section {
+        width: 80%;
+    }
+
+    .social-media {
+        margin-top: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    header p {
+        font-size: 0.6em;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    header h1 {
+        font-size: 1.2em;
+        padding: 0px;
+        margin: 0px;
+    }
+}
